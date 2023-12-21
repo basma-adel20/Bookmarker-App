@@ -1,0 +1,127 @@
+body{
+    background-color: #F7ECDE;
+}
+
+h1{
+    font-family: 'Pacifico';
+    font-size: 3.125rem;
+    width: fit-content;
+    z-index: 2;
+    color: #352E28;
+}
+
+h1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: #FEC260;
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::after{
+    height: 70%;
+
+}
+
+.site-details{
+    border-bottom: #e39f31;
+    border-top: #e39f31;
+    border-style: dashed;
+    border-width: 2px 0 2px 0;
+    width: inherit;
+}
+
+.site-details h2{
+    font-family: "Righteous", cursive;
+    font-size: 1.5625rem;
+    color: #774d0b;
+}
+
+.site-details .site-inputs {
+    font-weight: 700;
+}
+
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.site-details .submit{
+    background-color:#d1512d;
+}
+
+.site-details .submit:hover{
+    background-color: #BB4120E5;
+}
+
+table tbody .visit{
+    background-color: #8A9E23C4;
+}
+
+table tbody .visit:hover{
+    background-color: #8A9E23;
+}
+
+table tbody .visit , table tbody .submit{
+    font-size: 17px;
+}
+
+
+.handle-error-inputs{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.handle-error-inputs .error-content{
+    width: 500px;
+}
+
+.handle-error-inputs .error-content .circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+
+
+.btn-close {
+    opacity: 1;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(0,0,0, 0);
+}
+
+.handle-error-inputs .error-content p{
+    font-size: 1.3125rem;
+    font-family: 'Bree Serif';
+}
+
+.handle-error-inputs .error-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.handle-error-inputs .error-content ul li{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.handle-error-inputs .error-content ul li i{
+    color: #BB4120;
+}
